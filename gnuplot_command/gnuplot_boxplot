@@ -1,0 +1,32 @@
+
+
+set terminal png
+set style fill solid 0.25 border -1
+set pointsize 0.5
+set style boxplot outliers pointtype 7
+set style data boxplot
+set boxwidth 5
+unset key
+set grid
+set autoscale
+
+set output 'lia_compare_box.png'
+set output 'reno_compare_box.png'
+
+set title "congestion control (LIA) : default vs. loss-penalty scheduler"
+set title "congestion control (RENO) : default vs. loss-penalty scheduler"
+set xtics ("default" 1, "loss-penalty" 10)
+
+set output 'regular_mptcp_box_cubic.png'
+set output 'regular_mptcp_box_reno.png'
+set output 'enhanced_mptcp_box_reno.png'
+
+set title "default scheduler : LIA vs. CUBIC"
+set title "default scheduler : LIA vs. RENO"
+set title "loss-penalty scheduler : LIA vs. RENO"
+set xtics ("lia" 1, "cubic" 10)
+set xtics ("lia" 1, "reno" 10)
+
+plot '71_lia_final_2nd' using (1.0):1 , \
+>'en_71_lia_final_2nd' using (10.0):1
+

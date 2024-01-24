@@ -1,0 +1,25 @@
+
+
+cd wget_lia_pk
+
+for ((i=1; i<=30; i++))
+do
+tshark -r wget_lia_${i} -q -z io,stat,0,\
+"COUNT(tcp.analysis.retransmission) tcp.analysis.retransmission",\
+"COUNT(tcp.analysis.duplicate_ack)tcp.analysis.duplicate_ack",\
+"COUNT(tcp.analysis.lost_segment) tcp.analysis.lost_segment",\
+"COUNT(tcp.analysis.fast_retransmission) tcp.analysis.fast_retransmission" > wget_lia_${i}_pk_analy
+done
+
+mkdir wget_lia_pk_analy
+mv *_analy ./wget_lia_pk_analy
+mv wget_lia_pk_analy/ ..
+
+cd ../wget_lia_pk_analy
+
+for ((i=1; i<=30; i++))
+do
+tail -2 wget_lia_${i}_pk_analy | head -1 | awk -F " " '{print $6, $8, $10, $12}' >> lia_pk_analysis.txt
+done
+
+mv lia_pk_analysis.txt ..

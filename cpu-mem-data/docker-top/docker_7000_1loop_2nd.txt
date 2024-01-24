@@ -1,0 +1,134 @@
+top - 18:48:03 up 6 days, 17:43,  4 users,  load average: 0.73, 0.36, 0.30
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.7 us,  0.6 sy,  0.2 ni, 96.9 id,  0.5 wa,  0.0 hi,  0.1 si,  0.0 st
+KiB Mem:  12150992 total,  9454692 used,  2696300 free,   378932 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042220 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S   0.0  0.1   8:56.43 ssserver
+
+top - 18:48:04 up 6 days, 17:43,  4 users,  load average: 0.73, 0.36, 0.30
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.0 us,  0.5 sy,  0.0 ni, 94.5 id,  2.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:  12150992 total,  9454692 used,  2696300 free,   378932 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042220 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S   0.0  0.1   8:56.43 ssserver
+
+top - 18:48:05 up 6 days, 17:43,  4 users,  load average: 0.67, 0.36, 0.30
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.8 us,  0.3 sy,  0.0 ni, 99.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:  12150992 total,  9454692 used,  2696300 free,   378932 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042220 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S   0.0  0.1   8:56.43 ssserver
+
+top - 18:48:06 up 6 days, 17:43,  4 users,  load average: 0.67, 0.36, 0.30
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  7.8 us,  3.5 sy,  0.0 ni, 85.1 id,  0.0 wa,  0.0 hi,  3.5 si,  0.0 st
+KiB Mem:  12150992 total,  9462336 used,  2688656 free,   378940 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042256 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S  44.0  0.1   8:56.87 ssserver
+
+top - 18:48:07 up 6 days, 17:43,  4 users,  load average: 0.67, 0.36, 0.30
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.8 us,  2.6 sy,  0.0 ni, 87.7 id,  0.0 wa,  0.0 hi,  2.9 si,  0.0 st
+KiB Mem:  12150992 total,  9462336 used,  2688656 free,   378940 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042256 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 R  39.0  0.1   8:57.26 ssserver
+
+top - 18:48:08 up 6 days, 17:43,  4 users,  load average: 0.67, 0.36, 0.30
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  7.8 us,  2.3 sy,  0.0 ni, 87.2 id,  0.0 wa,  0.0 hi,  2.6 si,  0.0 st
+KiB Mem:  12150992 total,  9462336 used,  2688656 free,   378940 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042256 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S  40.0  0.1   8:57.66 ssserver
+
+top - 18:48:09 up 6 days, 17:43,  4 users,  load average: 0.67, 0.36, 0.30
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 12.3 us,  2.8 sy,  0.0 ni, 81.7 id,  0.3 wa,  0.0 hi,  2.8 si,  0.0 st
+KiB Mem:  12150992 total,  9466876 used,  2684116 free,   378940 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042500 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S  41.0  0.1   8:58.07 ssserver
+
+top - 18:48:10 up 6 days, 17:43,  4 users,  load average: 0.62, 0.35, 0.29
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  7.5 us,  2.3 sy,  0.0 ni, 86.9 id,  0.3 wa,  0.0 hi,  3.1 si,  0.0 st
+KiB Mem:  12150992 total,  9466876 used,  2684116 free,   378940 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042500 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 R  36.0  0.1   8:58.43 ssserver
+
+top - 18:48:11 up 6 days, 17:43,  4 users,  load average: 0.62, 0.35, 0.29
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  8.7 us,  3.4 sy,  0.0 ni, 80.6 id,  3.4 wa,  0.0 hi,  3.9 si,  0.0 st
+KiB Mem:  12150992 total,  9466876 used,  2684116 free,   378940 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042500 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S  49.9  0.1   8:58.93 ssserver
+
+top - 18:48:12 up 6 days, 17:43,  4 users,  load average: 0.62, 0.35, 0.29
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.4 us,  2.3 sy,  0.0 ni, 91.4 id,  0.0 wa,  0.0 hi,  1.8 si,  0.0 st
+KiB Mem:  12150992 total,  9469184 used,  2681808 free,   378948 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042816 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S  28.0  0.1   8:59.21 ssserver
+
+top - 18:48:13 up 6 days, 17:43,  4 users,  load average: 0.62, 0.35, 0.29
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.8 us,  0.8 sy,  0.0 ni, 97.7 id,  0.3 wa,  0.0 hi,  0.5 si,  0.0 st
+KiB Mem:  12150992 total,  9469184 used,  2681808 free,   378948 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042816 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S   0.0  0.1   8:59.21 ssserver
+
+top - 18:48:14 up 6 days, 17:43,  4 users,  load average: 0.62, 0.35, 0.29
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.3 sy,  0.0 ni, 99.0 id,  0.0 wa,  0.0 hi,  0.3 si,  0.0 st
+KiB Mem:  12150992 total,  9469184 used,  2681808 free,   378948 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042816 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S   0.0  0.1   8:59.21 ssserver
+
+top - 18:48:15 up 6 days, 17:43,  4 users,  load average: 0.57, 0.35, 0.29
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.3 sy,  0.0 ni, 99.0 id,  0.0 wa,  0.0 hi,  0.3 si,  0.0 st
+KiB Mem:  12150992 total,  9468620 used,  2682372 free,   378948 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042816 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S   0.0  0.1   8:59.21 ssserver
+
+top - 18:48:16 up 6 days, 17:43,  4 users,  load average: 0.57, 0.35, 0.29
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.5 sy,  0.0 ni, 80.6 id, 18.4 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:  12150992 total,  9468620 used,  2682372 free,   378948 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042816 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S   0.0  0.1   8:59.21 ssserver
+
+top - 18:48:17 up 6 days, 17:43,  4 users,  load average: 0.57, 0.35, 0.29
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.0 us,  0.3 sy,  0.0 ni, 98.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:  12150992 total,  9468620 used,  2682372 free,   378948 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5042816 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S   0.0  0.1   8:59.21 ssserver

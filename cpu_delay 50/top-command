@@ -1,0 +1,6 @@
+
+top -b -d 1 -p 21233 > docker_cpu.txt 
+
+top -b -d 1 -p 18452 > kvm_cpu.txt 
+
+

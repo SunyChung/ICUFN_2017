@@ -1,0 +1,25 @@
+
+sudo tc qdisc add dev eth0 root handle 1: htb default 10
+sudo tc class add dev eth0 parent 1:0 classid 1:10 htb rate 30Mbps ceil 30Mbps prio 1 
+sudo tc class add dev eth0 parent 1:0 classid 1:20 htb rate 30Mbps ceil 30Mbps prio 2
+
+sudo tc filter add dev eth0 parent 1:0 protocol ip prio 2 u32 \
+match ip dst 192.168.0.31 flowid 1:10
+____________________________________________________________________________
+
+sudo tc qdisc del dev eth0 root
+____________________________________________________________________________
+
+02:56:57:04:35:31 [usb0 mac address]
+____________________________________________________________________________
+
+sudo tc filter add dev eth0 parent 1:0 protocol ip prio 1 u32 \
+match u16 0x0800 0xffff at -2 match u32 0x02565704 0xffffffff at -12 \
+match u16 0x3531 0xffff at -14 flowid 1:10
+
+[client mac address info]
+
+02:56:57:04:35:31 [usb0 mac address]
+90:9F:33:0A:64:54 [wlan0 mac address]
+____________________________________________________________________________
+

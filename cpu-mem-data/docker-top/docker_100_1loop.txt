@@ -1,0 +1,35 @@
+top - 18:37:58 up 6 days, 17:33,  4 users,  load average: 0.04, 0.20, 0.24
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.7 us,  0.6 sy,  0.2 ni, 96.9 id,  0.5 wa,  0.0 hi,  0.1 si,  0.0 st
+KiB Mem:  12150992 total,  9445544 used,  2705448 free,   378700 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5037012 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S   0.0  0.1   8:44.18 ssserver
+
+top - 18:37:59 up 6 days, 17:33,  4 users,  load average: 0.11, 0.21, 0.25
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.8 us,  1.0 sy,  0.0 ni, 96.0 id,  1.2 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:  12150992 total,  9445544 used,  2705448 free,   378700 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5037012 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S   0.0  0.1   8:44.18 ssserver
+
+top - 18:38:00 up 6 days, 17:33,  4 users,  load average: 0.11, 0.21, 0.25
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.5 us,  0.5 sy,  0.0 ni, 98.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:  12150992 total,  9445544 used,  2705448 free,   378700 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5037012 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S   3.0  0.1   8:44.21 ssserver
+
+top - 18:38:01 up 6 days, 17:33,  4 users,  load average: 0.11, 0.21, 0.25
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2.0 us,  1.0 sy,  0.0 ni, 96.5 id,  0.0 wa,  0.0 hi,  0.5 si,  0.0 st
+KiB Mem:  12150992 total,  9445916 used,  2705076 free,   378700 buffers
+KiB Swap: 12531708 total,       84 used, 12531624 free.  5037024 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+21233 root      20   0   49540  16964   4816 S   5.0  0.1   8:44.26 ssserver

@@ -1,0 +1,13 @@
+
+set terminal png
+set style data histogram
+set style fill solid
+set output 'http.png'
+unset key
+set grid
+set auto x
+set xtics (10,50,100,500,1000)
+set yrange [0:120]
+set multiplot
+plot 'docker.txt' , 'kvm.txt'
+unset multiplot

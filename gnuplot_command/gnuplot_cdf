@@ -1,0 +1,19 @@
+
+
+set terminal png
+unset key
+set xlabel "throughput (MB/s)"
+set ylabel "C.D.F"
+set yrange [-0.1:1.1]
+set autoscale
+set grid
+set title "Regular MPTCP : lia C.D.F"
+set title "Regular MPTCP : cubic C.D.F"
+set title "Regular MPTCP : reno C.D.F"
+
+set title "Enhanced MPTCP : lia C.D.F"
+set title "Enhanced MPTCP : reno C.D.F"
+
+set output 'regular_lia_cdf.png'
+plot '71_lia_final_2nd' using 1:(1./30.) smooth cumul
+

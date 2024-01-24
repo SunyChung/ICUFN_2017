@@ -1,0 +1,18 @@
+
+____________________________________________________________________________
+
+tcptrace -G -zx test.cap > tcptrace.txt 
+
+[relative timestamp:x-axix graph generation 
+and the capture file summry is saved as "tcptrace.txt"]
+
+xplot.org l2k_tsg.xpl [xplot plotting]
+xpl2gpl l2k_tsg.xpl [gnuplot conversiont]
+
+Then the "l2k_tsg.gpl" file generated, load it in gnuplot!
+Exit gnuplot, then you will have .ps file stored in your folder!!
+
+____________________________________________________________________________
+
+
+

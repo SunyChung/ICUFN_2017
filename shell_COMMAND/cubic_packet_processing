@@ -1,0 +1,54 @@
+
+# packet to txt file
+mkdir wget_cubic_pk
+mv wget_cubic_* ./wget_cubic_pk
+cd wget_cubic_pk
+
+for ((i=1; i<=30; i++))
+do
+tshark -r wget_cubic_${i} -T fields -e frame.number -e frame.time_relative -e ip.src -e ip.dst -e frame.protocols -e frame.len -E header=y -E quote=n -E occurrence=f > wget_cubic_${i}.txt
+done
+
+mkdir wget_cubic_txt
+mv *.txt ./wget_cubic_txt
+mv wget_cubic_txt/ ..
+
+
+# data packet extracting
+cd ../wget_cubic_txt
+
+for ((i=1; i<=30; i++))
+do
+grep "1454" wget_cubic_${i}.txt > wget_cubic_datapk_${i}.txt
+done
+
+mkdir wget_cubic_datapk
+mv *_datapk*.txt ./wget_cubic_datapk
+mv wget_cubic_datapk/ ..
+
+
+# wifi_lte seperating
+cd ../wget_cubic_datapk
+
+for ((i=1; i<=30; i++))
+do
+grep -c "192.168.0.21" wget_cubic_datapk_${i}.txt > wget_cubic_${i}_wifi_count
+grep -c "1.233.226.37"  wget_cubic_datapk_${i}.txt > wget_cubic_${i}_lte_count
+done
+
+mkdir wget_cubic_interfaces
+mv *_count ./wget_cubic_interfaces
+mv wget_cubic_interfaces/ ..
+
+
+# per interface usage summary
+cd ../wget_cubic_interfaces
+
+for ((i=1; i<=30; i++))
+do
+cat wget_cubic_${i}_wifi_count >> wget_cubic_wifi_total
+cat wget_cubic_${i}_lte_count >> wget_cubic_lte_total
+done
+
+mv wget_cubic_wifi_total ..
+mv wget_cubic_lte_total ..

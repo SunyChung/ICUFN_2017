@@ -1,0 +1,34 @@
+
+____________________________________________________________________________
+
+sudo tc qdisc show dev eth1
+sudo tc qdisc show dev eth0
+
+cat /proc/sys/net/ipv4/tcp_congestion_control
+sudo sysctl -w net.ipv4.tcp_congestion_control=cubic
+sudo sysctl -w net.ipv4.tcp_congestion_control=lia
+____________________________________________________________________________
+
+sudo tc qdisc show dev eth1
+sudo tc qdisc show dev eth0
+
+sudo tc qdisc add dev eth1 root tbf rate 20mbit burst 20mbit latency 1
+cat /proc/sys/net/ipv4/tcp_congestion_control
+sudo sysctl -w net.ipv4.tcp_congestion_control=lia
+
+____________________________________________________________________________
+
+
+sudo tc qdisc add dev eth1 root handle 1: netem delay 60ms
+sudo tc qdisc add dev eth1 parent 1:1 handle 10: tbf rate 30mbit burst 30mbit latency 1
+
+client eth1 : 60ms delay added
+
+sudo tc qdisc add dev eth1 root netem delay 60ms 
+client usb : 100ms delay added
+____________________________________________________________________________
+
+
+sudo tc qdisc show dev eth1
+sudo tc qdisc show dev eth0
+

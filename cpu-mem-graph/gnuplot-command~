@@ -1,0 +1,24 @@
+
+set terminal png
+set xlabel "Number of client threads"
+set ylabel "CPU comsumption(%)"
+set autoscale
+set xrange [0:10000:1000]
+set key left top
+
+set output 'cpu.png'
+set multiplot
+plot 'kvm_cpu' with linespoints lw 2 pt 3 title "MPTCP with kvm proxy", \
+'docker_cpu' with linespoints lw 2 pt 4 title "MPTCP with docker proxy"
+unset multiplot
+
+
+set yrange [0:100]
+set ylabel "Memory consumption(%)"
+
+set output 'mem.png'
+set multiplot
+plot 'kvm_mem' with linespoints lw 2 pt 3 title "MPTCP with kvm proxy" , \
+'docker_mem' with linespoints lw 2 pt 4 title "MPTCP with docker proxy"
+unset multiplot
+

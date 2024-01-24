@@ -1,0 +1,30 @@
+
+Shadowsocks Server 
+Create a configuration file:
+
+sudo vi /etc/shadowsocks.json
+
+Put the following text into the file.
+
+	{
+	"server":"your_server_ip",
+	"server_port":8000,
+	"local_port":1080,
+	"password":"your_passwd",
+	"timeout":600,
+	"method":"aes-256-cfb"
+	}
+
+서버 시작
+sudo ssserver -c /etc/shadowsocks.json -d start
+
+서버 종료
+sudo ssserver -d stop
+
+서버 재시작
+sudo ssserver -c /etc/shadowsocks.json -d restart
+
+로그파일 보기
+less /var/log/shadowsocks.log
+
+

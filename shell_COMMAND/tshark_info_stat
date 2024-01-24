@@ -1,0 +1,32 @@
+
+
+
+tshark -r wget_cubic -T fields -e frame.number -e frame.time_relative -e ip.src -e ip.dst -e frame.protocols -e frame.len -E header=y -E quote=n -E occurrence=f > wget_cubic.txt
+
+
+
+tshark -r wget_cubic -q -z io,stat,1,ip.addr==1.2.3.4 
+
+Example: -z io,stat,1,ip.addr==1.2.3.4 will generate 1 second
+               statistics for all traffic to/from host 1.2.3.4.
+
+Example: -z "io,stat,0.001,smb&&ip.addr==1.2.3.4" will generate
+               1ms statistics for all SMB packets to/from host 1.2.3.4.
+
+               io,stat can also do much more statistics and calculate COUNT(),
+               SUM(), MIN(), MAX(), AVG() and LOAD() using a slightly
+               different filter syntax:
+
+ -z io,stat,interval,"[COUNT|SUM|MIN|MAX|AVG|LOAD](field)field [and filter]"
+               NOTE: One important thing to note here is that the field that
+               the calculation is based on MUST also be part of the filter
+               string or else the calculation will fail.
+
+
+
+tshark -r wget_cubic -q -z io,stat,0,\
+"COUNT(tcp.analysis.retransmission) tcp.analysis.retransmission",\
+"COUNT(tcp.analysis.duplicate_ack)tcp.analysis.duplicate_ack",\
+"COUNT(tcp.analysis.lost_segment) tcp.analysis.lost_segment",\
+"COUNT(tcp.analysis.fast_retransmission) tcp.analysis.fast_retransmission" > wget_cubic_${i}_pk_analy
+
